@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Orbitron:400,700,900|PT+Mono|Raleway:300,400,900");
+#fishtank {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+.about {
+  min-height: 300px;
+  overflow: scroll;
+  margin: 5% 5% 2%;
+  background-size: cover;
+  border: 5px solid #dfff00;
+  text-align: justify;
+  color: #00ffa5de; }
+  .about > h3 {
+    margin: 2% 5%; }
+
+.about-text {
+  background-color: #000000d6;
+  border: 2px solid #ff005a;
+  padding: 2%;
+  margin: 2% 5%;
+  margin-bottom: 2%; }
+
+.about-extra {
+  display: none; }

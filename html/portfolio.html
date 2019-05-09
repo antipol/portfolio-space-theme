@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>trine, web developer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="portfolio-bg">
+      <div class="fixed">
+    <section class="contact-form" id="contact">
+      <button onclick="contactFunction()"><i class="fas fa-times fa-3x"></i></button>
+      <div class="contact-hide" id="contactForm">
+        <p>Curious? Questions? <br> <span>contact</span> me!</p>
+        <form action="https://formspree.io/trine.grotkjaer.lund@gmail.com" method="POST">
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name">
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" required>
+          <textarea name="message" placeholder="Write your message here"></textarea>
+          <input type="submit" name="submit" value="Send">
+        </form>
+        <p>- or send me an email:<br><a href="mailto:trine.grotkjaer.lund@gmail.com?subject=website">trine.grotkjaer.lund@gmail.com</a></p>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="indicator-container">
+        <span onclick="currentDiv(1)" class="indicator fill"></span>
+        <span onclick="currentDiv(2)" class="indicator fill"></span>
+        <span onclick="currentDiv(3)" class="indicator fill"></span>
+        <span onclick="currentDiv(4)" class="indicator fill"></span>
+        <span onclick="currentDiv(5)" class="indicator fill"></span>
+      </div>
+      <!-- start first project -->
+      <figure class="slides">
+        <img src="../images/Screenshot-foglights1.png" alt="">
+        <figcaption>
+          <div>
+            <h4>DRY Foglights</h4>
+            <a href="file:///home/dci-l134/Desktop/dci/projects/boat/index.html" target="_blank">visit website</a>
+            <a href="#" target="_blank">view the code on GitHub</a>
+            <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest.</p>
+          </div>
+          <img src="../images/Screenshot-fog-mobile.png" alt="">
+        </figcaption>
+      </figure>
+      <!-- end first project -->
+      <!-- start second project -->
+      <figure class="slides">
+        <img src="../images/Screenshot-resume.png" alt="">
+        <figcaption>
+          <div>
+            <h4>Project name</h4>
+            <a href="file:///home/dci-l134/Desktop/dci/projects/resume/index.html" target="_blank">visit website</a>
+            <a href="#" target="_blank">view the code on GitHub</a>
+            <p>info about project</p>
+          </div>
+          <img src="../images/Screenshot-fog-mobile.png" alt="">
+        </figcaption>
+      </figure>
+      <!-- end second project -->
+      <!-- start third project -->
+      <figure class="slides">
+        <img src="../images/Screenshot-skanderbi.png" alt="">
+        <figcaption>
+          <div>
+            <h4>Project name</h4>
+            <a href="file:///home/dci-l134/Desktop/dci/projects/project-bee/index.html" target="_blank">visit website</a>
+            <a href="#" target="_blank">view the code on GitHub</a>
+            <p>info about project</p>
+          </div>
+          <img src="../images/Screenshot-fog-mobile.png" alt="">
+        </figcaption>
+      </figure>
+      <!-- end third project -->
+      <!-- start fourth project -->
+      <figure class="slides">
+        <img src="../images/Screenshot-portfolio1.png" alt="">
+        <figcaption>
+          <div>
+            <h4>Project name</h4>
+            <a href="file:///home/dci-l134/Desktop/dci/projects/orientation/index.html#top" target="_blank">visit website</a>
+            <a href="#" target="_blank">view the code on GitHub</a>
+            <p>info about project</p>
+          </div>
+          <img src="../images/Screenshot-fog-mobile.png" alt="">
+        </figcaption>
+      </figure>
+      <!-- end fourt project -->
+      <!-- start fifth project -->
+      <figure class="slides">
+        <img src="../images/Screenshot-altportfolio.png" alt="">
+        <figcaption>
+          <div>
+            <h4>Alternative portfolio</h4>
+            <a href="file:///home/dci-l134/Desktop/dci/html-css/portfolio/new-portfolio/portfolio.html" target="_blank">visit website</a>
+            <a href="#" target="_blank">view the code on GitHub</a>
+            <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore . . . and this is exploration at its greatest.</p>
+          </div>
+          <img src="../images/Screenshot-fog-mobile.png" alt="">
+        </figcaption>
+      </figure>
+      <!-- end fifth project -->
+    </section>
+    <i onclick="plusDivs(-1)" class="fas fa-chevron-left icon-left fa-5x"></i>
+    <i onclick="plusDivs(1)" class="fas fa-chevron-right icon-right fa-5x"></i>
+    <nav id="navHide">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a class="active" href="portfolio.html">portfolio</a>
+      <button onclick="contactFunction()">contact</button>
+    </nav>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>

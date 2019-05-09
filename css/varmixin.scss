@@ -1,0 +1,77 @@
+
+$dark: #01000c;
+$purple: #7a1292;
+$blue: #03ff8f;
+$green: #068a3c;
+$yellow: #dfff00;
+$orange: #e64504;
+$pink: #ff005a;
+$red: #ec0101;
+
+$space-xs: 1%;
+$space-s: 2%;
+$space-m: 5%;
+
+
+@mixin h1-position($rem) {
+  position: absolute;
+  top: $rem;
+  left: $rem;
+}
+
+// mixins for contact section
+@mixin form-layout {
+  padding: $space-s;
+  font-weight: bold;
+  background-color: #020202d1;
+  color: white;
+  border: 5px solid $yellow;
+  box-shadow: 0 0 5px 5px #0000007a;
+  &:focus {
+    border: 5px solid $blue;
+  }
+}
+// p tags in contact section
+@mixin contact-p {
+  background-color: #020202d1;
+  color: white;
+  text-shadow: -1px 1px 2px #000;
+  border: 5px solid $yellow;
+  padding: $space-s;
+  margin: $space-m auto;
+  width: 80%;
+}
+
+// navigation bar
+@mixin nav {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: $orange;
+  text-shadow: 1px 1px 6px $dark;
+  font-size: 1.1rem;
+  padding: $space-s;
+  place-self: center;
+}
+
+@mixin content {
+  min-height: 300px;
+  overflow: scroll;
+  margin: $space-m $space-m $space-s;
+  background-size: cover;
+  border: 5px solid $yellow;
+  text-align: justify;
+  color: #00ffa5de;
+}
+
+@mixin content-item {
+  background-color: #000000d6;
+  border: 2px solid $pink;
+  padding: $space-s;
+  margin: $space-s $space-m;
+}
+
+@mixin icon {
+  position: fixed;
+  top: 50%;
+  color: $yellow;
+  opacity: 0.6;
+}

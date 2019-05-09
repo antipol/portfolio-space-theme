@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Orbitron:400,700,900|PT+Mono|Raleway:300,400,900");
+.portfolio {
+  min-height: 300px;
+  overflow: scroll;
+  margin: 5% 5% 2%;
+  background-size: cover;
+  border: 5px solid #dfff00;
+  text-align: justify;
+  color: #00ffa5de;
+  position: relative;
+  background-color: #000000d6; }
+
+.slides {
+  display: none;
+  overflow: scroll; }
+  .slides img {
+    width: 100%; }
+
+figcaption {
+  background-color: #000000d6;
+  border: 2px solid #ff005a;
+  padding: 2%;
+  margin: 2% 5%; }
+  figcaption a {
+    display: block; }
+  figcaption img {
+    display: none; }
+
+.icon-left {
+  position: fixed;
+  top: 50%;
+  color: #dfff00;
+  opacity: 0.6;
+  left: 0;
+  text-shadow: -1px 0 8px #01000c; }
+
+.icon-right {
+  position: fixed;
+  top: 50%;
+  color: #dfff00;
+  opacity: 0.6;
+  right: 0;
+  text-shadow: 1px 0 8px #01000c; }
+
+.indicator-container {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.indicator {
+  display: inline-block;
+  margin: 2% 0;
+  width: 10%;
+  height: .4em;
+  background-color: white; }
+
+.fill {
+  background-color: #dfff00; }

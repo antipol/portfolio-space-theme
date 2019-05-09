@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Orbitron:400,700,900|PT+Mono|Raleway:300,400,900');
+
+@import "varmixin.scss";
+@import "portfolio.scss";
+@import "about.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000 url(../images/space.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'PT Mono', monospace;
+}
+.fixed {
+  overflow: scroll;
+  border: 10px solid $yellow;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 6fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+
+// HEADER
+header {
+  padding: 16% 0 12% 0;
+  text-align: right;
+  h1 {
+    position: relative;
+    margin: $space-m auto;
+    width: 300px;
+    height: 100px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+    span:last-child {
+      @include h1-position(0rem);
+      color: $dark;
+    }
+    span:nth-child(6) {
+      @include h1-position(.15rem);
+      color: $purple;
+    }
+    span:nth-child(5) {
+      @include h1-position(.3rem);
+      color: $blue;
+    }
+    span:nth-child(4) {
+      @include h1-position(.45rem);
+      color: $green;
+    }
+    span:nth-child(3) {
+      @include h1-position(.6rem);
+      color: $yellow;
+    }
+    span:nth-child(2) {
+      @include h1-position(.75rem);
+      color: $orange;
+    }
+    span:first-child {
+      @include h1-position(.9rem);
+      color: $pink;
+    }
+  }
+  h2 {
+    margin-top: 27%;
+    margin-right: $space-m;
+    font-family: 'Raleway', sans-serif;
+    color: $blue;
+    text-shadow: 0 0 5px black;
+    font-weight: lighter;
+    letter-spacing: 0.8rem;
+    span {
+      letter-spacing: 1.2rem;
+    }
+  }
+}
+
+
+// CONTACT form
+// contact container / fish
+.contact-form {
+  overflow: scroll;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: bottom 1.2s ease-in-out;
+  background: url(../images/fish-vertical.png) no-repeat bottom;
+  background-size: cover;
+  text-align: center;
+  z-index: 1;
+}
+// class added by JS, makes fish move down on click
+.contact-show {
+  bottom: 0;
+}
+
+// make text in contact visible when nav button is clicked
+.contact-hide {
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+// added by JS
+.contact-content {
+  opacity: 1;
+}
+
+// styling of button for closing contact form
+.contact-form > button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  color: $blue;
+  text-shadow: 0 0 5px $dark;
+  border: none;
+  outline: none;
+}
+
+// styling of contact form
+form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 7fr 1fr;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  width: 80%;
+  font-family: monospace;
+}
+label {
+  place-self: center;
+  padding: $space-s;
+  background-color: white;
+}
+input {
+  @include form-layout;
+  &:last-child {
+    grid-column: span 2;
+  }
+}
+textarea {
+  @include form-layout;
+  grid-column: span 2;
+}
+
+// styling of the text above contact form
+.contact-hide > p:first-child {
+  @include contact-p;
+  font-size: 1.2rem;
+  span {
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #000;
+    text-shadow: -2px 2px $blue;
+  }
+}
+// styling of text below contact form
+.contact-hide > p:last-child {
+  @include contact-p;
+  font-size: .9rem;
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+
+
+// NAVBAR
+nav {
+  grid-row: 2;
+  margin: $space-s auto;
+  width: 70%;
+  place-self: center;
+  background-color: #000000ad;
+  border: 5px solid $pink;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+  a {
+    @include nav;
+    display: block;
+    text-decoration: none;
+  }
+  button {
+    @include nav;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+}
+
+// class to show active/current page
+.active {
+  margin: 0 auto;
+  width: 70%;
+  color: $pink;
+  border: 2px solid $yellow;
+}
+
+// added by JS when contact is open, only from 768px MQ
+.nav-hide {
+  opacity: 0;
+}
+
+@import 'mediaqueries';

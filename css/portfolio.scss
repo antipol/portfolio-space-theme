@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Orbitron:400,700,900|PT+Mono|Raleway:300,400,900');
+@import "varmixin.scss";
+
+.portfolio {
+  @include content;
+  position: relative;
+  background-color: #000000d6;
+}
+
+.slides {
+  display: none;
+  overflow: scroll;
+  img {
+    width: 100%;
+  }
+}
+figcaption {
+  @include content-item;
+  a {
+    display: block;
+  }
+  img {
+    display: none;
+  }
+}
+.icon-left {
+  @include icon;
+  left: 0;
+  text-shadow: -1px 0 8px $dark;
+}
+.icon-right {
+  @include icon;
+  right: 0;
+  text-shadow: 1px 0 8px $dark;
+}
+.indicator-container {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.indicator {
+  display: inline-block;
+  margin: $space-s 0;
+  width: 10%;
+
+  height: .4em;
+  background-color: white;
+}
+.fill {
+  background-color: $yellow;
+}

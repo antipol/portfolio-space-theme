@@ -1,0 +1,291 @@
+@import "varmixin.scss";
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 768px) {
+  // ALL MQ
+  .fixed {
+    overflow: auto;
+    grid-template-rows: 15fr 1fr;
+  }
+
+  // HEADER MQ
+  header h1 {
+    font-size: 7rem;
+    width: 50%;
+  }
+  header h2 {
+    font-size: 2.2rem;
+  }
+
+  // CONTACT MQ
+  .contact-form > button {
+    top: 0;
+    right: 10px;
+    i {
+      font-size: 5rem;
+    }
+  }
+  .contact-hide > p:first-child {
+    margin-top: 10%;
+  }
+  form {
+    grid-gap: 25px;
+    margin: $space-m auto;
+  }
+
+  // NAVBAR MQ
+  nav {
+    width: 100%;
+    a, button {
+      display: inline-block;
+      width: 20%;
+    }
+  }
+  .active {
+    width: 20%;
+  }
+
+  // ABOUT MQ
+  .about {
+    overflow: auto;
+    margin: $space-s $space-s 0;
+  }
+  .about-extra {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: $space-s $space-m;
+    p {
+      background-color: #dbe82ca6;
+      color: $dark;
+    }
+  }
+  h3 {
+    margin: 0;
+  }
+  .extra-container {
+    border: 2px solid $pink;
+    padding: $space-s $space-m;
+    // height: 100%;
+  }
+  .knowledge {
+    grid-column: span 2;
+  }
+
+  // PORTFOLIO MQ
+  .portfolio {
+    margin: $space-s $space-s 0;
+  }
+  figcaption {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 30px;
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+// min width 992px
+@media screen and (min-width: 992px) {
+
+  .fixed {
+    overflow: auto;
+    border: 15px solid $yellow;
+  }
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #000000de;
+    width: 100%;
+    a, button {
+      font-size: 1.4rem;
+      padding: 5px;
+    }
+  }
+
+  // HEADER MQ
+  header {
+    padding: $space-s;
+    text-align: right;
+    h1 {
+      width: 90%;
+    }
+    h2 {
+      margin-top: 15%;
+      margin-right: 10%;
+    }
+  }
+
+  // ABOUT MQ
+  .about {
+    margin: $space-s $space-s 40px;
+    h3 {
+      margin: $space-xs $space-s;
+      font-size: 1.2rem;
+    }
+    .about-m {
+      position: relative;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      margin: $space-xs;
+    }
+    .about-text {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0 $space-xs;
+      h4 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding: $space-m;
+        font-size: 1.2rem;
+        text-shadow: 0 0 10px $blue;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        color: $dark;
+        transition: .3s ease-in-out;
+        border: 15px solid black;
+        }
+        & h4:hover {
+          opacity: 0;
+        }
+      }
+    }
+    .past {
+      background-color: #ff005ad9;
+    }
+    .present {
+      background-color: #03ff8fe8;
+    }
+    .future {
+      background-color: #ffffffd1;
+    }
+  .about-extra {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: $space-xs;
+    div {
+      width: 100%;
+      // margin: $space-xs;
+    }
+    h3 {
+      margin: $space-s 0;
+    }
+    .knowledge {
+      grid-column: span 1
+    }
+  }
+
+
+  // PORTFOLIO MQ
+  .portfolio {
+    margin: $space-s $space-s 40px;
+    overflow: hidden;
+  }
+  .slides {
+    overflow: hidden;
+    position: relative;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  figcaption {
+    background-color: #04ff00d6;
+    color: $dark;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10%;
+    border: none;
+    transition: .6s ease-in-out;
+    border-top-left-radius: 40%;
+    &:hover {
+      top: 0;
+      left: 35%;
+      border-radius: 0;
+      padding: $space-m;
+    }
+    img {
+      display: none;
+    }
+  }
+  .indicator-container {
+    top: -3px;
+    .indicator {
+      height: .7rem;
+    }
+  }
+  .icon-left:hover, .icon-right:hover {
+    opacity: 1;
+    transition: .2s ease-in-out;
+  }
+
+
+  // CONTACT
+  .contact-form {
+    overflow: visible;
+    background: url(../images/fish.png) no-repeat right;
+    background-size: contain;
+    width: 100%;
+    right: 100%;
+    bottom: 0;
+    transition: right 1.2s ease-in-out;
+  }
+  .contact-show {
+    right: 0%;
+    bottom: 0;
+  }
+  .contact-hide {
+    margin: $space-m auto $space-xs;
+    width: 80%;
+  }
+  .contact-hide p:first-child {
+    font-size: 1.1rem;
+    padding: $space-xs;
+    margin: $space-s auto $space-xs;
+    span {
+      font-size: 3rem;
+    }
+  }
+  .contact-hide p:last-child {
+    font-size: 1.1rem;
+    padding: $space-xs;
+    margin: $space-xs auto;
+  }
+  form {
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    input {
+      font-size: 1rem;
+      font-weight: lighter;
+      padding: $space-xs;
+    }
+    textarea {
+      font-size: 1.1rem;
+      font-weight: lighter;
+    }
+  }
+}

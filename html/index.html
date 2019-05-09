@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>trine, web developer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="fixed">
+  <header>
+    <h1>
+      <span>trine</span>
+      <span>trine</span>
+      <span>trine</span>
+      <span>trine</span>
+      <span>trine</span>
+      <span>trine</span>
+      <span>trine</span>
+    </h1>
+    <h2>you design,<br><span>I code</span></h2>
+  </header>
+  <section class="contact-form" id="contact">
+    <button onclick="contactFunction()"><i class="fas fa-times fa-3x"></i></button>
+    <div class="contact-hide" id="contactForm">
+      <p>Curious? Questions? <br> <span>contact</span> me!</p>
+      <form action="https://formspree.io/trine.grotkjaer.lund@gmail.com" method="POST">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name">
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required>
+        <textarea name="message" placeholder="Write your message here"></textarea>
+        <input type="submit" name="submit" value="Send">
+      </form>
+      <p>- or send me an email:<br><a href="mailto:trine.grotkjaer.lund@gmail.com?subject=website">trine.grotkjaer.lund@gmail.com</a></p>
+    </div>
+  </section>
+  <nav id="navHide">
+    <a class="active" href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="portfolio.html">portfolio</a>
+    <button onclick="contactFunction()">contact</button>
+  </nav>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>

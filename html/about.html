@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>trine, web developer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="fixed">
+    <video autoplay muted loop id="fishtank">
+      <source src="../images/fishtank.mp4" type="video/mp4">
+    </video>
+    <section class="contact-form" id="contact">
+      <button onclick="contactFunction()"><i class="fas fa-times fa-3x"></i></button>
+      <div class="contact-hide" id="contactForm">
+        <p>Curious? Questions? <br> <span>contact</span> me!</p>
+        <form action="https://formspree.io/trine.grotkjaer.lund@gmail.com" method="POST">
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name">
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" required>
+          <textarea name="message" placeholder="Write your message here"></textarea>
+          <input type="submit" name="submit" value="Send">
+        </form>
+        <p>- or send me an email:<br><a href="mailto:trine.grotkjaer.lund@gmail.com?subject=website">trine.grotkjaer.lund@gmail.com</a></p>
+      </div>
+    </section>
+    <section class="about">
+      <h3>Who am I?</h3>
+      <div class="about-m">
+        <!-- <div>
+          <button onclick="myPast()">Past</button> -->
+          <div class="about-text" id="aboutPast">
+            <h4 class="past">Past</h4>
+            <p>
+              I've always loved to create. No matter what.
+              As a child, Lego was my favourite toy, but only the building part, as soon as I had created something I took it apart to transform it into something else.
+              In my adult life I've had many different jobs, but none of them gave me "that" feeling, the right feeling.
+              Until now.
+            </p>
+          </div>
+        <!-- </div> -->
+        <!-- <div>
+        <button onclick="myPresent()">Present</button> -->
+        <div class="about-text" id="aboutPresent">
+          <h4 class="present">Present</h4>
+          <p>
+            The journey to become a web developer began with lots of soul searching and consideration of previous jobs and experiences.
+            I wanted to learn and I wanted to improve the world.
+            I love to solve riddles and mysteries.
+            And I love to create.
+            After almost 10 years in Berlin and lots of career detours I finally found something that makes sense to me, something that makes me want to skip nights and sit behind the screen 24/7 (don't worry, I don't).
+          </p>
+        </div>
+        <!-- </div>
+        <div>
+        <button onclick="myFuture()">Future</button> -->
+        <div class="about-text" id="aboutFuture">
+          <h4 class="future">Future</h4>
+          <p>
+            My curiousity seems to be unlimited when it comes to web development. At the moment I'm trying to concentrate on the 1 year course I'm currently attending, but that doesn't stop me from learning about computer science, cyber security and blockchain development in my spare time.
+          </p>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="about-extra">
+        <div>
+          <h3>Things I like</h3>
+          <div class="extra-container">
+            <p class="likes colors">colors</p>
+            <p class="likes">logic games</p>
+            <p class="likes">my dog</p>
+            <p class="likes">costumes</p>
+            <p class="likes">people</p>
+          </div>
+        </div>
+        <div>
+          <h3>Stuff I'm good at</h3>
+          <div class="extra-container">
+            <p>building things</p>
+            <p>being creative</p>
+            <p>learning new things</p>
+          </div>
+        </div>
+        <div class="knowledge">
+          <h3>Knowlegde</h3>
+          <div class="extra-container">
+            <p>html</p>
+            <p>css/scss</p>
+            <p>bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav id="navHide">
+      <a href="index.html">home</a>
+      <a class="active" href="about.html">about</a>
+      <a href="portfolio.html">portfolio</a>
+      <button onclick="contactFunction()">contact</button>
+    </nav>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>

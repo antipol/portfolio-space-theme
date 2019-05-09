@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Orbitron:400,700,900|PT+Mono|Raleway:300,400,900');
+@import "varmixin.scss";
+
+// ABOUT styling
+// background fish tank video
+#fishtank {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.about {
+  @include content;
+  // padding: $space-s;
+  & > h3 {
+    margin: $space-s $space-m;
+  }
+}
+
+.about-text {
+  @include content-item;
+  margin-bottom: $space-s;
+}
+
+.about-extra {
+  display: none;
+}
