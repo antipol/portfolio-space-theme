@@ -58,6 +58,7 @@
     grid-gap: 10px;
     margin: $space-s $space-m;
     p {
+      padding: $space-xs;
       background-color: #dbe82ca6;
       color: $dark;
     }
@@ -134,7 +135,7 @@
     margin: $space-s $space-s 40px;
     h3 {
       margin: $space-xs $space-s;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .about-m {
       position: relative;
@@ -142,7 +143,7 @@
       grid-template-rows: auto;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 10px;
-      margin: $space-xs;
+      margin: 0 $space-xs;
     }
     .about-text {
       position: relative;

@@ -14,9 +14,8 @@
 
 .about {
   @include content;
-  // padding: $space-s;
-  & > h3 {
-    margin: $space-s $space-m;
+  h3 {
+    margin: $space-s;
   }
 }
 

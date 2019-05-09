@@ -77,8 +77,8 @@ figcaption {
   border: 5px solid #dfff00;
   text-align: justify;
   color: #00ffa5de; }
-  .about > h3 {
-    margin: 2% 5%; }
+  .about h3 {
+    margin: 2%; }
 
 .about-text {
   background-color: #000000d6;
@@ -341,6 +341,7 @@ nav {
     grid-gap: 10px;
     margin: 2% 5%; }
     .about-extra p {
+      padding: 1%;
       background-color: #dbe82ca6;
       color: #01000c; }
   h3 {
@@ -385,14 +386,14 @@ nav {
     margin: 2% 2% 40px; }
     .about h3 {
       margin: 1% 2%;
-      font-size: 1.2rem; }
+      font-size: 1.1rem; }
     .about .about-m {
       position: relative;
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 10px;
-      margin: 1%; }
+      margin: 0 1%; }
     .about .about-text {
       position: relative;
       width: 100%;
